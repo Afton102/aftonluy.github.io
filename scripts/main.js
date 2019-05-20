@@ -1,11 +1,15 @@
-var iceCream = 'chocolate';
 document.querySelector('html').onclick = function() {
-    alert('Ouch! Stop poking me!');
+    alert('Click!');
 }
-if (iceCream === 'chocolate') {
-  alert('Yay, I love chocolate ice cream!');
-} else {
-  alert('Awwww, but chocolate is my favorite...');
+function getAlert(ex) {
+  if(ex){
+  alert('Hello!');
+  return "ok";
+  }
+  else {
+  alert('Github only one!');
+  return "ok";
+  }
 }
 function multiply(num1,num2) {
   var result = num1 * num2;
